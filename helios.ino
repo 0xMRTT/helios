@@ -15,6 +15,13 @@ void setup() {
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  tempSensor.requestTemperatures();             // send the command to get temperatures
+  tempCelsius = tempSensor.getTempCByIndex(0);  // read temperature in Celsius
+
+  Serial.print("Temperature: ");
+  Serial.print(tempCelsius);    // print the temperature in Celsius
+  Serial.print("°C");
+
+  delay(500);
 
 }
