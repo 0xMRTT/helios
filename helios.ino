@@ -1,7 +1,7 @@
 #include <OneWire.h>
 #include <DallasTemperature.h>
 
-const int SENSOR_PIN = 13; /
+const int SENSOR_PIN = 13; 
 
 OneWire oneWire(SENSOR_PIN);         
 DallasTemperature tempSensor(&oneWire); 
@@ -22,6 +22,6 @@ void loop() {
   Serial.print(tempCelsius);    // print the temperature in Celsius
   Serial.print("°C");
 
-  delay(500);
+  delay(1000);
 
 }
