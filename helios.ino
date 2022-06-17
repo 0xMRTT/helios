@@ -10,6 +10,7 @@ float tempCelsius;
 
 void setup() {
   Serial.begin(9600);
+  tempSensor.begin();
   Serial.println("Initializing");
 }
 
