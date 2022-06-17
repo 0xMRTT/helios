@@ -1,4 +1,5 @@
 {
     "board": "arduino:avr:uno",
-    "programmer": "arduino:arduinoisp"
+    "programmer": "arduino:arduinoisp",
+    "sketch": "helios.ino"
 }
